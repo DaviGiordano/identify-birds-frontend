@@ -1,0 +1,130 @@
+/* About.css */
+
+.about-container {
+    max-width: 600px; /* Adjust based on your preference */
+    margin: 0 auto; /* Center the container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: flex-start;
+    margin-top: 24px;
+    margin-bottom: 64px;
+}
+  
+.about-header {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    font-family: "Noto Sans Mono";
+
+}
+
+.about-container img {
+    max-width: 40%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 20px; /* Add some space above the image */
+    border: 2px solid #f0f0f0; /* Slight pale gray border */
+    border-radius: 8px; /* Border radius for rounded corners */
+  }
+  
+  
+.about-container h1 {
+    font-size: 28px;
+    /* margin-top: 24px; */
+    /* margin-bottom: 8px; */
+}
+
+.about-container h2 {
+    font-size: calc(8px + 2vmin);
+    margin-top: 16px;
+    margin-bottom: 8px;
+    align-self:flex-start;
+}
+
+.about-container p {
+    align-self:flex-start;
+    text-align: justify;
+    font-size: calc(4px + 2vmin);
+    margin-bottom: 1px;
+    line-height: 150%; /* Line height as a percentage of the current font size */     
+}
+
+.about-container a {
+    text-decoration: none;
+}
+
+ul {
+  list-style-type: none; /* Removes default bullet points */
+  padding-left: 0; /* Resets any left padding */
+  font-size: calc(4px + 2vmin);
+
+}
+
+ul li::before {
+  content: "• "; /* Custom bullet point */
+  color: black; /* Bullet point color */
+  font-size: 20px; /* Bullet point size */
+  line-height: 0; /* Adjust line height to align bullet points vertically with the text */
+  vertical-align: middle; /* Aligns bullet vertically */
+  margin-right: 8px; /* Space between the bullet point and text */
+  display: inline-block;
+}
+
+ul li{
+  text-align: start;
+  margin-top: 4px;
+  line-height: 150%; /* Line height as a percentage of the current font size */     
+
+
+}
+
+.about-container .blogpost-link {
+    color: #007BFF; /* Attractive blue color */
+    text-decoration: none; /* Removes underline */
+    padding-bottom: 2px; /* Ensures the border does not touch the text */
+    transition: color 0.3s ease-in-out, border-bottom-color 0.3s ease-in-out; /* Smooth transition for hover effects */
+  }
+  
+.about-container .blogpost-link:hover, .text-about .blogpost-link:focus {
+    color: #0056b3; /* Darker blue on hover/focus for better accessibility */
+    border-bottom-color: #0056b3; /* Border color transitions with text color */
+    text-decoration: none; /* Ensures underline doesn't re-appear on hover */
+  }
+
+  .about-header {
+    display: flex;
+    justify-content: center; /* Centers the title horizontally */
+    align-items: center; /* Aligns items vertically */
+    position: relative; /* Needed for absolute positioning of the link */
+    padding: 0px 30px ; /* Adjust as needed */
+  }
+  
+  .title-about {
+    text-align: center; /* Ensures text is centered */
+    /* Additional styling for the title */
+  }
+  
+  .link-to-app {
+    color: black;
+    position: absolute;
+    left: 0; /* Positions the link at the start (left) of the header */
+    top: 50%; /* Positions the link halfway down the parent */
+    transform: translateY(-50%); /* Centers the link vertically */
+    text-decoration: none; /* Optional: Removes underline from the link */
+    /* Additional styling for the link */
+  }
+  
+  .link-to-app::before {
+    content: "←"; /* Adds an arrow or your chosen symbol */
+    display: block;
+    /* Additional styling for the arrow, if needed */
+    transition: transform 0.2s ease-out;
+
+  }
+  
+
+
+.link-to-app:hover::before {
+    transform:  translateX(-2px);
+    /* Move arrow up and right on hover */
+}

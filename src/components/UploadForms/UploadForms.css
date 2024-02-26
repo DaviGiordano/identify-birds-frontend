@@ -1,0 +1,150 @@
+.App {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f8f8f8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: "Open Sans";
+}
+
+.App-body {
+    background-color: #f8f8f8;
+    /* Soft white background */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: "Noto Sans Mono";
+}
+
+.custom-file-upload {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #4f4caf;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.1s ease;
+    /* margin-bottom: 4px; */
+    font-family: "Noto Sans Mono";
+    font-size: 1rem;
+}
+
+
+.custom-file-upload:hover {
+    background-color: #393680;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: #4f4caf;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.1s ease;
+    margin-top: 8px;
+    font-family: "Noto Sans Mono";
+
+}
+
+
+
+button:hover {
+    background-color: #393680;
+    /* Darker shade of green for hover */
+}
+
+.file-name {
+    font-size: calc(2px + 2vmin);
+    margin-top: 8px;
+}
+
+
+.image-preview {
+    max-width: 100%;
+    /* Ensures the image is not wider than its container */
+    height: auto;
+    /* Maintains aspect ratio */
+    max-height: 200px;
+    /* Pre-defined height */
+    margin-top: 8px;
+    border-radius: 5px;
+}
+
+.result-message {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    font-family: "Open Sans";
+    /* Change the color based on your app theme */
+}
+
+.loader {
+    margin-top: 8px;
+    border: 4px solid #f3f3f3;
+    /* Light grey */
+    border-top: 4px solid #3498db;
+    /* Blue */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.link-to-about {
+    margin-top: 20px;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    font-size: 14px;
+}
+
+.link-to-about::after {
+    content: "→";
+    position: absolute;
+    left: 45px;
+    /* Position the arrow to the right inside the button */
+    top: 50%;
+    /* Start at the vertical center */
+    transform: translateY(-50%);
+    /* Adjust to center the arrow vertically */
+    transition: transform 0.2s ease-out;
+    /* Smooth transition for the arrow movement */
+}
+
+.link-to-about:hover::after {
+    transform: translateY(-50%) translateX(2px);
+    /* Move arrow up and right on hover */
+}
+
+.title {
+    font-size: 28px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: calc(8px + 2vmin);
+    margin-bottom: 24px;
+}
+
